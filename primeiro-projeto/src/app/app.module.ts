@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { CursosModule } from './cursos/cursos.module';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,17 +9,9 @@ import { MeuPrimeiroComponent } from './meu-primeiro-componente/meu-primeiro.com
 import { ComponentPorComando } from './component-por-comando/component-por-comando.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MeuPrimeiroComponent,
-    ComponentPorComando
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    CursosModule
-  ],
+  declarations: [AppComponent, MeuPrimeiroComponent, ComponentPorComando],
+  imports: [BrowserModule, AppRoutingModule, CursosModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
